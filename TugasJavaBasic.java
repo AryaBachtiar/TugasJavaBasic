@@ -167,14 +167,18 @@ public class TugasJavaBasic {
                                                 switch (celcius) {
                                                     case 1:
                                                     int Cf;
+                                                    System.out.print("Masukkan Suhu :");
                                                     Cf = sc.nextInt();
                                                     System.out.println("Celcius ke Farenheit");
+                                                    
                                                     System.out.println(Cf + " di ubah ke "
                                                     + ( (9 * Cf/5) + 32) + " °F");
                                                         break;
                                                     case 2:
                                                     int Cr;
+                                                    System.out.print("Masukkan Suhu : ");
                                                     Cr = sc.nextInt();
+                                                    
                                                     System.out.println(
                                                         Cr + " di ubah ke " + (Cr  * 4 / 5) + " °R");
                                                 break;
@@ -198,13 +202,16 @@ public class TugasJavaBasic {
                                                 switch (fahrenheit) {
                                                     case 1:
                                                     int Fc;
+                                                    System.out.print("Masukkan Suhu :");
                                                     Fc = sc.nextInt();
                                                     System.out.println(Fc + " di ubah ke "
                                                     + ( (Fc-32) * 5/9) + " °C");
                                                         break;
                                                     case 2:
                                                     int Fr;
+                                                    System.out.print("Masukkan Suhu : ");
                                                     Fr = sc.nextInt();
+                                                    
                                                     System.out.println(
                                                         Fr + " di ubah ke " + (Fr - 32) * 4/9 + " °R");
                                                 break;
@@ -226,15 +233,17 @@ public class TugasJavaBasic {
                                             switch (Reamur) {
                                                 case 1:
                                                 int Rc;
+                                                System.out.print("Masukkan Suhu : ");
                                                 Rc = sc.nextInt();
                                                 System.out.println(Rc + " di ubah ke "
                                                 + ( (Rc-32 * 5/4) + " °C"));
                                                     break;
                                                 case 2:
                                                 int Rf;
+                                                System.out.print("Masukkan Suhu : ");
                                                 Rf = sc.nextInt();
                                                 System.out.println(
-                                                    Rf + " di ubah ke " + (Rf * 9/4 + 32 + " °R"));
+                                                    Rf + " di ubah ke " + (Rf * 9/4 + 32 + " °F"));
                                             break;
 
                                                 default:
