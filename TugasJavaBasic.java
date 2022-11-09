@@ -152,31 +152,98 @@ public class TugasJavaBasic {
                                     int D1 = 1;
                                     do {
                                         System.out.println("Derajat : ");
-                                        System.out.println(" 1.Farenhait \n 2.Reamur \n 3.Exit");
+                                        System.out.println(" 1.Celcius \n 2.Farenhait \n 3.Reamur \n 4.Exit");
                                         System.out.println("Masukkan Nomor : ");
                                         D1 = sc.nextInt();
                                         switch (D1) {
 
                                             case 1:
                                                
-                                                int fahrenheit;
-                                                System.out.println("Fahrenheit");
-                                                System.out.println("Masukkan Suhu : ");
-                                                fahrenheit = sc.nextInt();
-
-                                                System.out.println(fahrenheit + " di ubah ke "
-                                                        + ( (9 * fahrenheit/5) + 32) + " °F");
+                                                int celcius;
+                                                System.out.println("Suhu Celcius");
+                                                System.out.println(" 1.Celcius ke Farenheit \n 2.Celcius ke Reamur \n 3.Exit");
+                                                System.out.println("Masukkan Angka : ");
+                                                celcius = sc.nextInt();
+                                                switch (celcius) {
+                                                    case 1:
+                                                    int Cf;
+                                                    Cf = sc.nextInt();
+                                                    System.out.println("Celcius ke Farenheit");
+                                                    System.out.println(Cf + " di ubah ke "
+                                                    + ( (9 * Cf/5) + 32) + " °F");
+                                                        break;
+                                                    case 2:
+                                                    int Cr;
+                                                    Cr = sc.nextInt();
+                                                    System.out.println(
+                                                        Cr + " di ubah ke " + (Cr  * 4 / 5) + " °R");
                                                 break;
+
+                                                    default:
+                                                        break;
+                                                }
+                                                while (celcius < 3) {
+                                                    break;
+                                                }
+                                                break;
+                                                
 
                                             case 2:
-                                                int suhu2;
-                                                System.out.println("Reamur");
-                                                System.out.print("Masukkan Suhu : ");
-                                                suhu2 = sc.nextInt();
-
-                                                System.out.println(
-                                                        suhu2 + " di ubah ke " + (suhu2  * 4 / 5) + " °R");
+                                                int fahrenheit;
+                                         
+                                                System.out.println("Farenheit");
+                                                System.out.println(" 1.Farenheit ke Celcius \n 2.Farenheit ke Reamur \n 3.Exit");
+                                                System.out.print("Masukkan angka : ");
+                                                fahrenheit = sc.nextInt();
+                                                switch (fahrenheit) {
+                                                    case 1:
+                                                    int Fc;
+                                                    Fc = sc.nextInt();
+                                                    System.out.println(Fc + " di ubah ke "
+                                                    + ( (Fc-32) * 5/9) + " °C");
+                                                        break;
+                                                    case 2:
+                                                    int Fr;
+                                                    Fr = sc.nextInt();
+                                                    System.out.println(
+                                                        Fr + " di ubah ke " + (Fr - 32) * 4/9 + " °R");
                                                 break;
+
+                                                    default:
+                                                        break;
+                                                }
+                                                while (fahrenheit < 3) {
+                                                    break;
+                                                }
+                                                break;
+                                            case 3:
+                                            int Reamur;
+                                            
+                                            System.out.println("Reamur");
+                                            System.out.println(" 1.Reamur ke Celcius \n 2.Reamur ke Farenheit \n 3.Exit");
+                                            System.out.print("Masukkan angka : ");
+                                            Reamur = sc.nextInt();
+                                            switch (Reamur) {
+                                                case 1:
+                                                int Rc;
+                                                Rc = sc.nextInt();
+                                                System.out.println(Rc + " di ubah ke "
+                                                + ( (Rc-32 * 5/4) + " °C"));
+                                                    break;
+                                                case 2:
+                                                int Rf;
+                                                Rf = sc.nextInt();
+                                                System.out.println(
+                                                    Rf + " di ubah ke " + (Rf * 9/4 + 32 + " °R"));
+                                            break;
+
+                                                default:
+                                                    break;
+                                            }
+                                            while (Reamur < 3) {
+                                                break;
+                                            }
+                                               
 
                                             default:
                                                 break;
