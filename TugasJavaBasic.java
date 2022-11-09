@@ -236,7 +236,7 @@ public class TugasJavaBasic {
                                                 System.out.print("Masukkan Suhu : ");
                                                 Rc = sc.nextInt();
                                                 System.out.println(Rc + " di ubah ke "
-                                                + ( (Rc-32 * 5/4) + " °C"));
+                                                + ( (Rc * 5/4) + " °C"));
                                                     break;
                                                 case 2:
                                                 int Rf;
