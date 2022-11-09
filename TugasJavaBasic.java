@@ -411,7 +411,6 @@ public class TugasJavaBasic {
                                     case 1:
                                     String uppercase ;
                                     System.out.println("Ketik apa yang ingin dijadikan Uppercase : ");
-                                    sc.nextLine();
                                     uppercase = sc.nextLine();
                                     uppercase = sc.nextLine().toUpperCase();
                                     List<String> Lost = Arrays.asList(uppercase.split(" "));
