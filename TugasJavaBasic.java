@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 
 public class TugasJavaBasic {
@@ -19,15 +22,15 @@ public class TugasJavaBasic {
 
         System.out.print("Pin: ");
         pin = sc.next();
-        if (nama.equals("Administrator") && password >= 5 && pin.equals(123456789)) {
+        if (nama.equals("Administrator") && password >= 00000 && pin.equals(123456789)) {
             System.out.println("Akses Di Terima, Selamat Datang!!!  \n");
         } 
         do {
 
             if (nama.equals("Administrator") && password >= 5 && pin.equals("123456789")) {
-
+                System.out.println("\n Akses Di Terima, Selamat Datang!!!  \n");
                 System.out
-                        .println("Silahkan Pilih Menu : \n 1.Bangun Ruang/Datar \n 2. Konversi \n 3. Secret \n 4. Exit");
+                        .println("Silahkan Pilih Menu : \n 1. Bangun Ruang/Datar \n 2. Konversi \n 3. Secret \n 4. Exit");
                 System.out.print("Pilih Nomor :");
                 menusoal = sc.nextInt();
                 System.out.println("Anda Memilih Nomor: " + menusoal);
@@ -49,7 +52,6 @@ public class TugasJavaBasic {
                                     int sisi;
                                     int alas;
                                     int rusuk;
-                                    int π;
 
                                     do {
                                         System.out.println(
@@ -71,8 +73,6 @@ public class TugasJavaBasic {
                                             case 2:
                                                 System.out.print("Sisi : ");
                                                 sisi = sc.nextInt();
-                                                System.out.print("Sisi : ");
-                                                sisi = sc.nextInt();
                                                 System.out.println("Luas Persegi  = " + (sisi * sisi + "cm²"));
                                                 break;
                                             case 3:
@@ -80,16 +80,13 @@ public class TugasJavaBasic {
                                                 alas = sc.nextInt();
                                                 System.out.print("Tinggi : ");
                                                 tinggi = sc.nextInt();
-                                                System.out.println("Luas Segitiga = " + (alas * tinggi /2  + " cm²"));
+                                                System.out.println("Luas Segitiga = " + (alas * tinggi * 1/2   + " cm²"));
+                                                System.out.println("Rumus Luas Segitiga 1/2 x alas x tinggi");
                                                 break;
                                             case 4:
-                                                System.out.print("Phi : ");
-                                                π = sc.nextInt();
                                                 System.out.print("R : ");
                                                 rusuk = sc.nextInt();
-                                                System.out.print("R : ");
-                                                rusuk = sc.nextInt();
-                                                System.out.println("Luas Lingkaran = " + (π * rusuk * rusuk + "cm²"));
+                                                System.out.println("Luas Lingkaran = " + (22 * rusuk * rusuk / 7 + "cm²"));
                                                 break;
                                             default:
                                         }
@@ -101,8 +98,8 @@ public class TugasJavaBasic {
                                     int l;
                                     int t;
                                     int s;
-                                    int r;
-                                    int phi;
+                                    float r;
+                                    Float phi;
 
                                     do {
                                         System.out.println(
@@ -124,23 +121,14 @@ public class TugasJavaBasic {
                                             case 2:
                                                 System.out.print("Sisi : ");
                                                 s = sc.nextInt();
-                                                System.out.print("Sisi : ");
-                                                s = sc.nextInt();
-                                                System.out.print("Sisi : ");
-                                                s = sc.nextInt();
                                                 System.out.println("Volume Kubus = " + (s * s * s + "Liter"));
                                                 break;
                                             case 3:
-                                                System.out.print("Phi: ");
-                                                phi = sc.nextInt();
-                                                System.out.print("Jari-Jari : ");
-                                                r = sc.nextInt();
-                                                System.out.print("Jari-Jari : ");
-                                                r = sc.nextInt();
+                                               
                                                 System.out.print("Jari-Jari : ");
                                                 r = sc.nextInt();
                                                 System.out.println(
-                                                        "Volume Bola = " + (4 * phi * r * r * r / 3 + "Liter"));
+                                                     "Volume Bola = " + (4 * r * r * r / 3 *22/7)  + " Liter");
                                                 break;
                                             default:
                                         }
@@ -164,45 +152,36 @@ public class TugasJavaBasic {
                                     int D1 = 1;
                                     do {
                                         System.out.println("Derajat : ");
-                                        System.out.println(" 1.Celcius \n 2.Reamur \n 3.Farenheit \n 4.Exit");
+                                        System.out.println(" 1.Farenhait \n 2.Reamur \n 3.Exit");
                                         System.out.println("Masukkan Nomor : ");
                                         D1 = sc.nextInt();
                                         switch (D1) {
-                                            case 1:
-                                                int suhu;
-                                                Float celcius = 273.15f;
-                                                System.out.println("Celcius");
-                                                System.out.println("Masukkan Nomor : ");
-                                                suhu = sc.nextInt();
 
-                                                System.out.println(suhu + " Di ubah ke " + (suhu - celcius) + " °C");
+                                            case 1:
+                                               
+                                                int fahrenheit;
+                                                System.out.println("Fahrenheit");
+                                                System.out.println("Masukkan Suhu : ");
+                                                fahrenheit = sc.nextInt();
+
+                                                System.out.println(fahrenheit + " di ubah ke "
+                                                        + ( (9 * fahrenheit/5) + 32) + " °F");
                                                 break;
 
                                             case 2:
-                                                int derajat;
-                                                Float fahrenheit = 457.87f;
-                                                System.out.println("Fahrenheit");
-                                                System.out.println("Masukkan Nomor : ");
-                                                derajat = sc.nextInt();
-
-                                                System.out.println(derajat + " di ubah ke "
-                                                        + (derajat * 9 / 5 - fahrenheit) + " °F");
-                                                break;
-
-                                            case 3:
                                                 int suhu2;
                                                 System.out.println("Reamur");
-                                                System.out.println("Masukkan Nomor : ");
+                                                System.out.print("Masukkan Suhu : ");
                                                 suhu2 = sc.nextInt();
 
                                                 System.out.println(
-                                                        suhu2 + " di ubah ke " + (suhu2 - 273) * 4 / 5 + " °R");
+                                                        suhu2 + " di ubah ke " + (suhu2  * 4 / 5) + " °R");
                                                 break;
 
                                             default:
                                                 break;
                                         }
-                                    } while (D1 < 4);
+                                    } while (D1 < 3);
                                     break;
                                 // End Konversi
 
@@ -352,38 +331,49 @@ public class TugasJavaBasic {
                         System.out.print("Masukan kode unik: ");
                         unik2 = sc.next();
                         if (unik2.equals("sayangkamu") && unik2.length() == 10) {
-                            System.out.println("Selamat Datang VIP!!");
+                            System.out.println(" \n Selamat Datang VIP!! \n ");
 
                             int vip;
 
                             do {
                                 System.out.println("Silahkan Pilih Menu Rahasia");
                                 System.out.println(" 1. Uppercase \n 2. Lowercase \n 3. Reverse \n 4.Exit");
+                                System.out.print("Pilih Nomor : ");
                                 vip = sc.nextInt();
                                 switch (vip) {
                                     case 1:
-                                        String uppercase = "";
-                                        System.out.println("Ketik apa yang ingin dijadikan Uppercase : ");
-                                        uppercase = sc.next();
-                                        String strUpper = uppercase.toUpperCase();
-                                        System.out.println("Uppercase " + strUpper);
+                                    String uppercase ;
+                                    System.out.println("Ketik apa yang ingin dijadikan Uppercase : ");
+                                    sc.nextLine();
+                                    uppercase = sc.nextLine();
+                                    uppercase = sc.nextLine().toUpperCase();
+                                    List<String> Lost = Arrays.asList(uppercase.split(" "));
+                                    System.out.print("Uppercase : ");
+                          
+                                    System.out.println(String.join(" ",Lost ));
                                         break;
                                     case 2:
-                                        String lowercase = "";
-                                        System.out.println("Ketik apa yang ingin dijadikan Lowercase : ");
-                                        lowercase = sc.next();
-                                        String strLower = lowercase.toLowerCase();
-                                        System.out.println("Lowercase " + strLower);
+                                    String lowercase ;
+                                    System.out.println("Ketik apa yang ingin dijadikan Uppercase : ");
+                                    sc.nextLine();
+                                    lowercase = sc.nextLine();
+                                    lowercase = sc.nextLine().toLowerCase();
+                                    List<String> Last = Arrays.asList(lowercase.split(" "));
+                                    System.out.print("LowerCase : ");
+                          
+                                    System.out.println(String.join(" ",Last ));
+                                        
                                         break;
                                     case 3:
                                         String revese;
-                                        String revereseStr = "";
                                         System.out.println("Ketik apa yang ingin dijadikan Reverse : ");
-                                        revese = sc.next();
-                                        for (int i = 0; i < revese.length(); i++) {
-                                            revereseStr = revese.charAt(i) + revereseStr;
-                                        }
-                                        System.out.println("Reversed String : " + revereseStr);
+                                         sc.nextLine();
+                                        revese = sc.nextLine();
+
+                                            List<String> List = Arrays.asList(revese.split(" "));
+                                            System.out.print("Reversed : ");
+                                            Collections.reverse(List);
+                                            System.out.println(String.join(" ",List )); 
                                         break;
 
                                     default:
@@ -395,14 +385,17 @@ public class TugasJavaBasic {
 
                         } else {
                             System.out.println("Akses Di tolak");
+                            break;
                         }
                 }
             } else {
                 System.out.println("Akses Di tolak");
+                break;
             }
 
-        } while (menusoal < 4 && nama.equals("Administrator") && password >= 5 && pin.equals("123456789"));
+        } while (menusoal < 4 && nama.equals("Administrator") && password >= 00000 && pin.equals("123456789"));
         System.out.println("Sistem OFF harus Run Ulang");
+ 
         sc.close();
 
     }
