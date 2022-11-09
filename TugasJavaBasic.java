@@ -422,7 +422,6 @@ public class TugasJavaBasic {
                                     case 2:
                                     String lowercase ;
                                     System.out.println("Ketik apa yang ingin dijadikan Uppercase : ");
-                                    sc.nextLine();
                                     lowercase = sc.nextLine();
                                     lowercase = sc.nextLine().toLowerCase();
                                     List<String> Last = Arrays.asList(lowercase.split(" "));
